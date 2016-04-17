@@ -1,0 +1,1 @@
+start /b bin\PrincessRainbowface.exe
