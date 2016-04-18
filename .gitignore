@@ -28,8 +28,8 @@ gtags.files
 *.rej
 
 ## Non-static Minetest directories or symlinks to these
-/bin/
-/games/*
+!/bin/
+!/games/*
 !/games/minimal/
 /cache
 /textures/*
