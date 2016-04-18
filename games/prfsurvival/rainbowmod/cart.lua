@@ -1,3 +1,5 @@
+---Under Building, Feature added soon!
+
 dofile(minetest.get_modpath("rainbowmod").."/functions.lua")
 
 
