@@ -13,6 +13,7 @@ print("Data is loading, wait a moment please...")
 dofile(minetest.get_modpath("rainbowmod").."/blocks.lua")
 dofile(minetest.get_modpath("rainbowmod").."/mapgen.lua")
 dofile(minetest.get_modpath("rainbowmod").."/tools.lua")
+dofile(minetest.get_modpath("rainbowmod").."/items.lua")
 --dofile(minetest.get_modpath("rainbowmod").."/better_graphics.lua")  --Please Someone add this feature after end with the principal thing!
 
 print("Data Finished Loading, Enjoy PrincessRainbowFace Survival Mode Game")
