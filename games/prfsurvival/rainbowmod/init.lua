@@ -11,8 +11,8 @@ print("Data is loading, wait a moment please...")
 --Enjoy this, i hope this list be bigger with the time, I hope that girl enjoy this a lot!
 
 dofile(minetest.get_modpath("rainbowmod").."/blocks.lua")
-dofile(minetest.get_modpath("rainbowmod").."/mapgen.lua")
-dofile(minetest.get_modpath("rainbowmod").."/tools.lua")
+--dofile(minetest.get_modpath("rainbowmod").."/mapgen.lua")
+--dofile(minetest.get_modpath("rainbowmod").."/tools.lua")
 dofile(minetest.get_modpath("rainbowmod").."/items.lua")
 --dofile(minetest.get_modpath("rainbowmod").."/better_graphics.lua")  --Please Someone add this feature after end with the principal thing!
 
