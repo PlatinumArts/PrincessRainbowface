@@ -118,3 +118,92 @@ minetest.register_craftitem("rainbowmod:ice_cream_c", {
 ---Easter Eggs hidden contest, the easter eggs exactly (Do this the MOST QUICK YOU CAN!)
 
 --(See the flowers code, to see how make the easter egg be "3d")
+
+minetest.register_node("rainbowmod:easter_egg_a", {
+	description = "Easter Egg Blue-Yellow",
+	drawtype = "plantlike",
+	tiles = { "easter_egg_a.png" },
+	inventory_image = "easter_egg_a.png",
+	wield_image = "easter_egg_a.png",
+	paramtype = "light",
+	walkable = false,
+	buildable_to = true,
+	groups = {snappy=3,flammable=2,attached_node=1},
+	selection_box = {
+		type = "fixed",
+		fixed = { -0.5, -0.5, -0.5, 0.5, -0.2, 0.5 },
+	},
+})
+
+minetest.register_node("rainbowmod:easter_egg_b", {
+	description = "Easter Egg Red-Yellow",
+	drawtype = "plantlike",
+	tiles = { "easter_egg_b.png" },
+	inventory_image = "easter_egg_b.png",
+	wield_image = "easter_egg_b.png",
+	paramtype = "light",
+	walkable = false,
+	buildable_to = true,
+	groups = {snappy=3,flammable=2,attached_node=1},
+	selection_box = {
+		type = "fixed",
+		fixed = { -0.5, -0.5, -0.5, 0.5, -0.2, 0.5 },
+	},
+})
+
+minetest.register_node("rainbowmod:easter_egg_c", {
+	description = "Easter Egg Blue-Red",
+	drawtype = "plantlike",
+	tiles = { "easter_egg_c.png" },
+	inventory_image = "easter_egg_c.png",
+	wield_image = "easter_egg_c.png",
+	paramtype = "light",
+	walkable = false,
+	buildable_to = true,
+	groups = {snappy=3,flammable=2,attached_node=1},
+	selection_box = {
+		type = "fixed",
+		fixed = { -0.5, -0.5, -0.5, 0.5, -0.2, 0.5 },
+	},
+})
+
+--Golden Easter Egg! (Very preciable!)
+
+
+minetest.register_node("rainbowmod:easter_egg_d", {
+	description = "Test Easter Egg",
+	drawtype = "plantlike",
+	tiles = { "easter_egg_d.png" },
+	inventory_image = "easter_egg_d.png",
+	wield_image = "easter_egg_d.png",
+	paramtype = "light",
+	walkable = false,
+	buildable_to = true,
+	groups = {snappy=3,flammable=2,attached_node=1},
+	selection_box = {
+		type = "fixed",
+		fixed = { -0.5, -0.5, -0.5, 0.5, -0.2, 0.5 },
+	on_use = function(itemstack, user, pointed_thing)
+	hp_change = 20
+	replace_with_item = nil
+
+		minetest.chat_send_player(user:get_player_name(), "Easter Egg Test!")
+
+		-- Support for hunger mods using minetest.register_on_item_eat
+		for _ , callback in pairs(minetest.registered_on_item_eats) do
+			local result = callback(hp_change, replace_with_item, itemstack, user, pointed_thing)
+			if result then
+				return result
+			end
+		end
+
+		if itemstack:take_item() ~= nil then
+			user:set_hp(user:get_hp() + hp_change)
+		end
+
+		return itemstack
+	end
+})	
+	},
+})
+
