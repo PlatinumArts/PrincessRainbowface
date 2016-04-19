@@ -1,6 +1,5 @@
 --This code is of the blocks (well, obvious? sometimes the life has no sense!)
 
-dofile(minetest.get_modpath("rainbowmod").."/functions.lua")
 
 minetest.register_node("rainbowmod:rainbow_block", {
 	description = "Rainbow Block",
