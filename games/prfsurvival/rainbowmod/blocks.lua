@@ -12,5 +12,5 @@ minetest.register_craft({
 	recipe = {
 		{'', '', 'air'},  --Why with air, simply a rainbow is in the sky, where there is many air, if you want get air try this: "giveme:air"
 		{'', '', ''},
-		{'', '', ''},
-
+		{'', '', ''}
+})
