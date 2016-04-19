@@ -1,4 +1,4 @@
----items.lua doing the items code easier since 2011!
+--items.lua doing the items code easier since 2011!
 
 
 minetest.register_tool("rainbowmod:help_text", {
@@ -6,26 +6,19 @@ minetest.register_tool("rainbowmod:help_text", {
    inventory_image = "paper_text.png",
    stack_max = 1,
 
-   on_use = function(itemstack, user, pointed_thing)
-	
-		show_apps(user)
-	end,
-})
-
-
-local path = minetest.get_modpath("formspecs")
-
- = function(name, param)
+   on_use = function(name, param)
 		minetest.show_formspec(name, "rainbowmod:help_text_f",
 				"size[20,20]" ..
 				"image_button_exit[15,17;4,2;exit_button.png;formspecs:exit:test;Exi Of Help Text]" ..
-			 "background[1,1;20,20;paper_text.png]" ..
+			    "background[1,1;20,20;paper_text.png]")
 	end
 })
 
+
+
 ---Example if you forget the distances and axis!
 ---image_button[X,Y;W,H;image;name;label]
-})
+
 
 minetest.register_tool("rainbowmod:magic_wand_piece", {
    description = "Magic Wand Piece",
@@ -203,7 +196,5 @@ minetest.register_node("rainbowmod:easter_egg_d", {
 
 		return itemstack
 	end
-})	
 	},
 })
-
