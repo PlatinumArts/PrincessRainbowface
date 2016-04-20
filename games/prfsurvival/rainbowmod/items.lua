@@ -157,7 +157,6 @@ minetest.register_node("rainbowmod:easter_egg_d", {
 
 		minetest.chat_send_player(user:get_player_name(), "Easter Egg Test!")
 
-		-- Support for hunger mods using minetest.register_on_item_eat
 		for _ , callback in pairs(minetest.registered_on_item_eats) do
 			local result = callback(hp_change, replace_with_item, itemstack, user, pointed_thing)
 			if result then
