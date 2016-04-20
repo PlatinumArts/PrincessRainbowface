@@ -1,25 +1,6 @@
 --items.lua doing the items code easier since 2011!
 
 
-minetest.register_tool("rainbowmod:help_text", {
-   description = "Help Text (See to know what to do!)",
-   inventory_image = "paper_text.png",
-   stack_max = 1,
-
-   on_use = function(name, param)
-		minetest.show_formspec(name, "rainbowmod:help_text_f",
-				"size[20,20]" ..
-				"image_button_exit[15,17;4,2;exit_button.png;formspecs:exit:test;Exi Of Help Text]" ..
-			    "background[1,1;20,20;paper_text.png]")
-	end
-})
-
-
-
----Example if you forget the distances and axis!
----image_button[X,Y;W,H;image;name;label]
-
-
 minetest.register_tool("rainbowmod:magic_wand_piece", {
    description = "Magic Wand Piece",
    inventory_image = "magic_wand_piece.png",
@@ -38,7 +19,6 @@ minetest.register_craftitem("rainbowmod:ice_cream_a", {
 
 		minetest.chat_send_player(user:get_player_name(), "This Ice Cream Cone it's delicious! Yum Yum!")
 
-	---This is the support for the hunger mod, in really it doesn't do the big difference!
 		for _ , callback in pairs(minetest.registered_on_item_eats) do
 			local result = callback(hp_change, replace_with_item, itemstack, user, pointed_thing)
 			if result then
@@ -63,7 +43,7 @@ minetest.register_craftitem("rainbowmod:ice_cream_b", {
 
 		minetest.chat_send_player(user:get_player_name(), "This Cookie Ice Cream it's delicious! Yum Yum!")
 	
-	---This is the support for the hunger mod, in really it doesn't do the big difference!
+
 		for _ , callback in pairs(minetest.registered_on_item_eats) do
 			local result = callback(hp_change, replace_with_item, itemstack, user, pointed_thing)
 			if result then
@@ -88,7 +68,6 @@ minetest.register_craftitem("rainbowmod:ice_cream_c", {
 
 		minetest.chat_send_player(user:get_player_name(), "This Popsicle it's delicious! Yum Yum!")
 
-	---This is the support for the hunger mod, in really it doesn't do the big difference!
 		for _ , callback in pairs(minetest.registered_on_item_eats) do
 			local result = callback(hp_change, replace_with_item, itemstack, user, pointed_thing)
 			if result then
@@ -107,10 +86,6 @@ minetest.register_craftitem("rainbowmod:ice_cream_c", {
 ---There are many ice cream flavors to do from this one!
 ---Exactly seven from this three, that means:21 Icecreams to taste!
 
-
----Easter Eggs hidden contest, the easter eggs exactly (Do this the MOST QUICK YOU CAN!)
-
---(See the flowers code, to see how make the easter egg be "3d")
 
 minetest.register_node("rainbowmod:easter_egg_a", {
 	description = "Easter Egg Blue-Yellow",
