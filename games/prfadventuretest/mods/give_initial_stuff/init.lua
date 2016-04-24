@@ -6,6 +6,8 @@ minetest.register_on_newplayer(function(player)
 		player:get_inventory():add_item('main', 'default:tree 3')
 		player:get_inventory():add_item('main', 'default:axe_steel')
 		player:get_inventory():add_item('main', 'books_plus:booklocked')
+		player:get_inventory():add_item('main', 'magic:wand_missle')
+		player:get_inventory():add_item('main', 'default:bookshelf')
 		if minetest.get_modpath("landrush") ~= nil then
 		  player:get_inventory():add_item('main', 'landrush:landclaim 4')
 		end

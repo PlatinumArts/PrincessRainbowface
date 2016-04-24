@@ -127,7 +127,7 @@ local magicmissle_spell = {
 		local sk = skills.get_skill(name,SKILL_MAGIC)
 		local skb = skills.get_def(SKILL_MAGIC)
 		
-		if sk.level >= 4 then		
+		if sk.level >= 1 then		
 			local mana = 10 - ( ( (sk.level - 2) / skb.max_level ) * 10 )
 			local p_mana = pd.get_number(name,"mana")
 			if p_mana >= mana then
