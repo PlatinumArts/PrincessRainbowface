@@ -1,0 +1,7 @@
+affects
+bushes?
+flowers?
+bones?
+cottages?
+
+

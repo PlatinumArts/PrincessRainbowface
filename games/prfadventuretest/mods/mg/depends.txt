@@ -1,0 +1,4 @@
+default
+experience?
+farming?
+bushes?

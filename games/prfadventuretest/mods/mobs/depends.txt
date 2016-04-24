@@ -1,0 +1,6 @@
+default
+fire
+affects
+cottages?
+throwing?
+quests?
