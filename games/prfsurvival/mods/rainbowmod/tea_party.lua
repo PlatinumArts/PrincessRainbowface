@@ -2,6 +2,8 @@
 
 --This is mah Cookie!
 
+-- add the mugs!
+
 minetest.register_craftitem("rainbowmod:cookies", {
 	description = "Cookie",
 	inventory_image = "mah_cookie.png",
