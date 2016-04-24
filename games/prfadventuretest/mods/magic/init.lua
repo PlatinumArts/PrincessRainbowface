@@ -23,7 +23,7 @@ function magic.update_magic(player,name)
 		return
 	end
 	local s = skills.get_skill(name,SKILL_MAGIC)
-	local baseAdj = 2
+	local baseAdj = 20 -- Mikeedit base magicregen is much faster, default was 2
 	local mana = pd.get_number(name,"mana")	
 		if default.player_get_animation(player) == "lay" then
 			baseAdj = baseAdj + 3

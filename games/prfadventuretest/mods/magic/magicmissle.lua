@@ -127,8 +127,8 @@ local magicmissle_spell = {
 		local sk = skills.get_skill(name,SKILL_MAGIC)
 		local skb = skills.get_def(SKILL_MAGIC)
 		
-		if sk.level >= 1 then		
-			local mana = 10 - ( ( (sk.level - 2) / skb.max_level ) * 10 )
+		if sk.level >= 1 then		--Mikeedit changed to 1 from 4 so that you can use it at lvl 1
+			local mana = 5 - ( ( (sk.level - 2) / skb.max_level ) * 10 )  --Mikeedit Magicmissle doesn't use up so much magic
 			local p_mana = pd.get_number(name,"mana")
 			if p_mana >= mana then
 				p_mana = p_mana - mana
@@ -150,7 +150,7 @@ local magicmissle_spell = {
 		end
 	end,
 	max_mana = 10,
-	level = 4,
+	level = 1,  -- Mikeedit changed from 4 to 1, for the level usage?  Does this matter?
 }
 
 magic.register_spell(magicmissle_spell)
