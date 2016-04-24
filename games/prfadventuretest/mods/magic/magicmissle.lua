@@ -3,7 +3,7 @@ local MAGICMISSLE_ENTITY={
 	timer=0,
 	visual = "sprite",
 	visual_size = {x=0.5, y=0.5},
-	textures = {"magic_magicmissle.png"},
+	textures = {"heart.png"},
 	lastpos={},
 	collisionbox = {0,0,0,0,0,0},
 	player = nil,
@@ -83,7 +83,7 @@ MAGICMISSLE_ENTITY.on_step = function(self, dtime)
 		expirationtime = 4,
 		size = 1.2,
 		collisiondetection = true,
-		texture = "magic_magicmissle_particle1.png",
+		texture = "heart.png",
 	}
 	minetest.add_particle(ps_def)
 	
@@ -109,7 +109,7 @@ function hitparticles(pos)
         minsize = 1,
         maxsize = 3,
         collisiondetection = false,
-        texture = "magic_magicmissle_particle1.png",
+        texture = "heart.png",
 	}
 	minetest.add_particlespawner(ps_def)
 end
