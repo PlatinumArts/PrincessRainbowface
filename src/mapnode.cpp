@@ -732,7 +732,7 @@ void MapNode::deSerialize_pre22(u8 *source, u8 version)
 	{
 		// In these versions, CONTENT_IGNORE and CONTENT_AIR
 		// are 255 and 254
-		// Version 19 is fucked up with sometimes the old values and sometimes not
+		// Version 19 is ed up with sometimes the old values and sometimes not
 		if(param0 == 255)
 			param0 = CONTENT_IGNORE;
 		else if(param0 == 254)
