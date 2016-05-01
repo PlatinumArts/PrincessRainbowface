@@ -29,3 +29,14 @@ minetest.register_craftitem("rainbowmod:cookies", {
 })
 
 
+minetest.register_craftitem("rainbowmod:tea_cup", {
+	description = "Tea Cup (Without Tea)",
+	inventory_image = "tea_cup.png"
+})
+
+minetest.register_craftitem("rainbowmod:tea_mug", {
+	description = "Tea Mug (Without Tea)",
+	inventory_image = "tea_mug.png"
+})
+
+
