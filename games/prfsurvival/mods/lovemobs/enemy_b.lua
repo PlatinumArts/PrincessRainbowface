@@ -1,6 +1,6 @@
 ---Enemy B
 
-mobs:register_mob("lovemobs:enemy_b.lua", {
+mobs:register_mob("lovemobs:enemy_b", {
 	type = "monster",
 	passive = false,
 	attack_type = "dogfight",
