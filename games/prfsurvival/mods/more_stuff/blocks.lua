@@ -58,6 +58,6 @@ minetest.register_node("more_stuff:nyan_dog"{
 minetest.register_craft({
         output = ' "more_stuff:nyan_dog" 12'
         recipe = {
-        {"lovemod:rainbow_block", "lovemod:rainbow_block},
+        {"rainbowmod:rainbow_block", "rainbowmod:rainbow_block"},
         }
 })
