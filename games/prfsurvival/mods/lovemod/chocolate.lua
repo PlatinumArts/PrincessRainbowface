@@ -1,6 +1,6 @@
 minetest.register_craftitem("lovemod:chocolate", {
     description = "Chocolate (Click To Eat)",
-    inventory_image = "chocolate.png",
+    inventory_image = "bonbon.png",
     on_use = minetest.item_eat(1, "lovemod:chocolate_wrapper")
 })
 
@@ -8,7 +8,7 @@ minetest.register_craftitem("lovemod:chocolate", {
 
 minetest.register_craftitem("lovemod:chocolate_wrapper", {
     description = "Chocolate Wrapper"
-    inventory_image = "chocolate_wrapper.png",
+    inventory_image = "wrapper.bmp",
 })
 
 minetest.register_craft({
@@ -20,7 +20,7 @@ minetest.register_craft({
 
 minetest.register_craftitem("lovemod:chocolate_box", {
     description = "Chocolate Box (Is Empty)",
-    inventory_image = "chocolate_box.png"
+    inventory_image = "box.bmp"
 })
 
 minetest.register_craft({
