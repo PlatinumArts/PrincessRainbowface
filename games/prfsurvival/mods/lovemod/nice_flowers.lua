@@ -2,12 +2,12 @@
 
 minetest.register_craftitem("lovemod:nice_roses", {
 	description = "Bouquet Of Roses",
-	inventory_image = "red_roses.png"
+	inventory_image = "red_roses.bmp"
 })
 
 minetest.register_craftitem("lovemod:nice_tulips", {
    description = "Bouquet Of Tulips",
-   inventory_image = "tulips.png"
+   inventory_image = "tulips.bmp"
 })
 
 minetest.register_craft({
@@ -24,12 +24,12 @@ minetest.register_craft({
 
 minetest.register_craftitem("lovemod:nice_geraniums", {
   description = "Bouquet Of Geraniums",
-  inventory_image = "geraniums.png"
+  inventory_image = "geraniums.bmp"
 )}
 
 minetest.register_craftitem("lovemod:nice_violas", {
   description = "Bouquet Of Violas",
-  inventory_image = "violas.png"
+  inventory_image = "violas.bmp"
 )}
 
 minetest.register_craft({
