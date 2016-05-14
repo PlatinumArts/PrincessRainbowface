@@ -47,17 +47,3 @@ local function has_locked_chest_privilege(meta, player)
 	end
 	return true
 end
-
-minetest.register_node("more_stuff:nyan_dog"{
-        description = "Nyan Dog",
-        tile_images = {"nyan_dog_side.png","nyan_dog_top.png", "nyan_dog_face"},
-        groups = {"oddly_breakable_by_hand=3"},
-        paramtype2 = "facedir",
-})
-
-minetest.register_craft({
-        output = ' "more_stuff:nyan_dog" 12'
-        recipe = {
-        {"rainbowmod:rainbow_block", "rainbowmod:rainbow_block"},
-        }
-})
