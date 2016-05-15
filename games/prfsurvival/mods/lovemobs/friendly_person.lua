@@ -1,11 +1,11 @@
 --First mob of PRF, for some reason i called it "friendly_person" technically it's a mob, or an entity that walks around and spawns in the grass!
 
 lovemobs.person_drops = {
-	"default:pick_steel", "mobs:meat", "default:diamond"",
+	"default:pick_steel", "mobs:meat", "default:diamond",
 	"default:shovel_steel", "farming:bread", "bucket:bucket_water"
 }
 
-lovemobs.register_mob("lovemobs:friendly_person", {
+lovemobs:register_mob("lovemobs:friendly_person", {
 	type = "npc",
 	passive = true,
 	damage = 2,
