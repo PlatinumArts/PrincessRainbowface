@@ -16,39 +16,39 @@ minetest.register_craft({
 })
 
 --Blocks to do pixel art
-minetest.register_node("rainbowmod:green_block"{
+minetest.register_node("rainbowmod:green_block",{
 	description = "Green Block",
 	tile_images = {"green.png"},
 	groups = {oddly_breakable_by_hand = 3},
 })
 
-minetest.register_node("rainbowmod:yellow_block"{
+minetest.register_node("rainbowmod:yellow_block",{
 	description = "Yellow Block",
-	tile_images = {yellow.png},
+	tile_images = {"yellow.png"},
 	groups = {oddly_breakable_by_hand = 3},
 })
 
-minetest.register_node("rainbowmod:red_block"{
+minetest.register_node("rainbowmod:red_block",{
 	description = "Red Block",
 	tile_images = {"red.png"},
 })
 
-minetest.register_node("rainbowmod:blue_block"{
+minetest.register_node("rainbowmod:blue_block",{
 	description = "Blue Block",
 	tile_images = {"blue.png"}
 })
 
-minetest.register_node("rainbowmod:white_block"{
+minetest.register_node("rainbowmod:white_block",{
 	description = "White Block",
 	tile_images = {"white.png"},
 })
 
-minetest.register_node("rainbowmod:orange_block"{
+minetest.register_node("rainbowmod:orange_block",{
 	description = "Orange Block",
 	tile_images = {"orange.png"},
 })
 
-minetest.register_node("rainbowmod:purple_block"{
+minetest.register_node("rainbowmod:purple_block",{
 	description = "Purple Block",
 	tile_images = {"purple.png"},
 })
