@@ -7,8 +7,8 @@ minetest.register_craftitem("lovemod:chocolate", {
 --Here goes the craft_recipe of the chocolate
 
 minetest.register_craftitem("lovemod:chocolate_wrapper", {
-    description = "Chocolate Wrapper"
-    inventory_image = "wrapper.bmp",
+    description = "Chocolate Wrapper",
+    inventory_image = "wrapper.bmp"
 })
 
 minetest.register_craft({
