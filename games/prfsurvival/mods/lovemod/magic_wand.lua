@@ -55,7 +55,7 @@ minetest.register_craftitem("lovemod:magicdust", {
 		return itemstack
 	end
 })
-})
+
 
 -- The Arrow Entity
 
