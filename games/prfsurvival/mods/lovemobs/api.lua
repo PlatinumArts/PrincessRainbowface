@@ -2088,7 +2088,6 @@ function lovemobs:register_mob(name, def)
 
 minetest.register_entity(name, {
 
-	stepheight = def.stepheight or 0.6,
 	name = name,
 	type = def.type,
 	attack_type = def.attack_type,
@@ -2836,20 +2835,8 @@ local drop_items = function(pos, invstring)
 
 end
 
--- override chest node so it drops items on explode
-minetest.override_item("default:chest", {
+-- override chest node so it drops items on explode (DEPRECATED, better make the chests invulnerable to explosions)
 
-	on_blast = function(p)
-
-		minetest.after(0, function()
-
-			drop_items(p, "main")
-
-			minetest.remove_node(p)
-		end)
-	end,
-
-})
 
 -- compatibility function for old entities to new modpack entities
 function lovemobs:alias_mob(old_name, new_name)
