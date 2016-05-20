@@ -1,0 +1,2 @@
+name = "Strange Creature",
+author = "prof_turbo",
