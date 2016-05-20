@@ -49,6 +49,18 @@ function default.node_sound_sand_defaults(table)
 	return table
 end
 
+function default.node_sound_gravel_defaults(table)
+	table = table or {}
+	table.footstep = table.footstep or
+			{name = "default_gravel_footstep", gain = 0.5}
+	table.dug = table.dug or
+			{name = "default_gravel_footstep", gain = 1.0}
+	table.place = table.place or
+			{name = "default_place_node", gain = 1.0}
+	default.node_sound_defaults(table)
+	return table
+end
+
 function default.node_sound_wood_defaults(table)
 	table = table or {}
 	table.footstep = table.footstep or
@@ -109,6 +121,21 @@ minetest.register_abm({
 	end,
 })
 
+
+--
+-- optimized helper to put all items in an inventory into a drops list
+--
+function default.get_inventory_drops(pos, inventory, drops)
+	local inv = minetest.get_meta(pos):get_inventory()
+	local n = #drops
+	for i = 1, inv:get_size(inventory) do
+		local stack = inv:get_stack(inventory, i)
+		if stack:get_count() > 0 then
+			drops[n+1] = stack:to_table()
+			n = n + 1
+		end
+	end
+end
 
 --
 -- Papyrus and cactus growing
@@ -362,16 +389,8 @@ minetest.register_abm({
 		"default:dirt_with_grass",
 		"default:dirt_with_dry_grass",
 		"default:dirt_with_snow",
-		"default:grass_1",
-		"default:grass_2",
-		"default:grass_3",
-		"default:grass_4",
-		"default:grass_5",
-		"default:dry_grass_1",
-		"default:dry_grass_2",
-		"default:dry_grass_3",
-		"default:dry_grass_4",
-		"default:dry_grass_5",
+		"group:grass",
+		"group:dry_grass",
 		"default:snow",
 	},
 	interval = 6,
@@ -408,9 +427,9 @@ minetest.register_abm({
 		if name == "default:snow" then
 			minetest.set_node(pos, {name = "default:dirt_with_snow"})
 		-- Most likely case first.
-		elseif name:sub(1, 13) == "default:grass" then
+		elseif minetest.get_item_group(name, "grass") ~= 0 then
 			minetest.set_node(pos, {name = "default:dirt_with_grass"})
-		elseif name:sub(1, 17) == "default:dry_grass" then
+		elseif minetest.get_item_group(name, "dry_grass") ~= 0 then
 			minetest.set_node(pos, {name = "default:dirt_with_dry_grass"})
 		end
 	end
