@@ -1,0 +1,21 @@
+Minetest Modpack - Railnet [minetest-railnet]
+=============================================
+
+License Source Code: LGPL v2.1
+
+License of media (textures, sounds and models not otherwise specified): CC-0
+
+Authors of media files:
+-----------------------
+
+Gambit : WTFPL - Modified by Napiophelios
+
+   railcart.png
+   railcart_bottom.png
+   railcart_side.png
+   railcart_top.png
+
+rarkenin:
+
+  cart_rail_*.png
+
