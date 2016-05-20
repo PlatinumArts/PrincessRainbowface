@@ -138,9 +138,11 @@ function _doors.door_toggle(pos, clicker)
 	local state = meta:get_string("state")
 	if state == "" then
 		-- fix up lvm-placed right-hinged doors, default closed
-		if minetest.get_node(pos).name:sub(-2) == "_b" then
-			state = 2
-		end
+--		if minetest.get_node(pos).name:sub(-2) == "_b" then
+--			state = 2
+--		end
+		state = 2
+-- Above lines commented are the original code, 144 from Duane to stop the crashing of the doors in the cities
 	else
 		state = tonumber(state)
 	end
