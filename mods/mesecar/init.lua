@@ -1,8 +1,9 @@
 local ACDC = 0.2 -- Acceleration / decelleration
 local MAXSP = 12 -- Maximum speed
-local TURNSP = 0.03 -- Maximum yaw speed
-local STEPH = 0.6 -- Stepheight, 0.6 = climb slabs, 1.1 = climb nodes
-
+--local TURNSP = 0.03 -- Maximum yaw speed
+--local STEPH = 0.6 -- Stepheight, 0.6 = climb slabs, 1.1 = climb nodes
+local STEPH = 3
+local TURNSP = 0.09
 
 -- Functions
 
