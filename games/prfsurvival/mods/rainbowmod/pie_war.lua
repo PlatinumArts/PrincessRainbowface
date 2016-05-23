@@ -32,7 +32,7 @@ minetest.register_craftitem("rainbowmod:pie_terminator", {
 minetest.register_craftitem("rainbowmod:arrow", {
 	description = "Pie",
 	inventory_image = "pie_to_throw.png",
-	on_use = minetest.item_eat(20)
+	on_use = rainbowmod_shoot_arrow
 })
 
 -- The Arrow Entity
