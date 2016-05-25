@@ -1242,7 +1242,7 @@ minetest.register_node("default:river_water_flowing", {
 		not_in_creative_inventory = 1},
 })
 
-
+--[[
 minetest.register_node("default:lava_source", {
 	description = "Lava Source",
 	drawtype = "liquid",
@@ -1335,7 +1335,7 @@ minetest.register_node("default:lava_flowing", {
 	groups = {lava = 3, liquid = 2, hot = 3, igniter = 1,
 		not_in_creative_inventory = 1},
 })
-
+--]]-- Removed Lava Block for Class
 --
 -- Tools / "Advanced" crafting / Non-"natural"
 --

@@ -3,7 +3,7 @@
 
 minetest.register_alias("bucket", "bucket:bucket_empty")
 minetest.register_alias("bucket_water", "bucket:bucket_water")
-minetest.register_alias("bucket_lava", "bucket:bucket_lava")
+--minetest.register_alias("bucket_lava", "bucket:bucket_lava") removed lava bucket for class
 
 minetest.register_craft({
 	output = 'bucket:bucket_empty 1',
@@ -174,7 +174,7 @@ bucket.register_liquid(
 	"River Water Bucket",
 	{water_bucket = 1}
 )
-
+--[[
 bucket.register_liquid(
 	"default:lava_source",
 	"default:lava_flowing",
@@ -189,4 +189,4 @@ minetest.register_craft({
 	burntime = 60,
 	replacements = {{"bucket:bucket_lava", "bucket:bucket_empty"}},
 })
-
+]]-- Remove Lava bucket for class

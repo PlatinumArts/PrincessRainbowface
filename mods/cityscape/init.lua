@@ -103,7 +103,7 @@ dofile(cityscape.path .. "/mapgen.lua")
 dofile(cityscape.path .. "/valleys.lua")
 dofile(cityscape.path .. "/buildings.lua")
 dofile(cityscape.path .. "/houses.lua")
-dofile(cityscape.path .. "/molotov.lua")
+--dofile(cityscape.path .. "/molotov.lua")  Remove molotov with the kiddos
 
 local unbroken = true
 local unbreak_this = "house_with_pool"
