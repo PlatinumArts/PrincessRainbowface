@@ -3,7 +3,7 @@ disable_portal_stuff=false
 portalgun={new=0,checkpoints={}}
 dofile(minetest.get_modpath("portalgun") .. "/gravityuse.lua") -- the gravity part of portalgun
 dofile(minetest.get_modpath("portalgun") .. "/craft.lua")
---dofile(minetest.get_modpath("portalgun") .. "/stuff.lua") -- security cam  Removed camera and sentry for class
+dofile(minetest.get_modpath("portalgun") .. "/stuff.lua") -- security cam  Removed camera and sentry for class
 
 if disable_portal_stuff==false and minetest.get_modpath("mesecons")~=nil then
 dofile(minetest.get_modpath("portalgun") .. "/weightedstoragecube.lua") -- weighted storage cube

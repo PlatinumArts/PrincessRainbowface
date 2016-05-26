@@ -121,7 +121,7 @@ function portalgun_ra2shoot(pos,ob)
 		end
 		return false
 end
-
+--[[  Removed cam and robot / turret for class
 minetest.register_node("portalgun:robot", {
 	description = "Turret Gun" ,
 	tiles = {"default_cloud.png","default_cloud.png^[colorize:#ff0000ff","default_cloud.png^[colorize:#000000ff"},
@@ -274,3 +274,4 @@ on_step= function(self, dtime)
 	timer=0,
 	timer2=0,
 })
+--]]
