@@ -16,3 +16,4 @@ minetest.craftitemdef_default.stack_max = 999
 dofile(minetest.get_modpath("default").."/nodes.lua")
 dofile(minetest.get_modpath("default").."/tools.lua")
 dofile(minetest.get_modpath("default").."/items.lua")
+dofile(minetest.get_modpath("default").."/player.lua")
