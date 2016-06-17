@@ -29,7 +29,8 @@ minetest.register_node("default:stone", {
 minetest.register_node("default:alphnium", {
 	description = "Alphnium Ore",
 	tiles = {"alphnium.png"},
-	groups = {cracky=2}
+	groups = {cracky=2},
+	drop = "default:alphynium_ore"
 })
 
 
