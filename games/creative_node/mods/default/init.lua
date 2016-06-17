@@ -14,3 +14,4 @@ minetest.craftitemdef_default.stack_max = 999
 
 ---Load Code---
 dofile(minetest.get_modpath("default").."/nodes.lua")
+dofile(minetest.get_modpath("default").."/nodes.lua")
