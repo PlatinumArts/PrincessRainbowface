@@ -21,8 +21,8 @@ minetest.register_node("default:sand", {
 })
 
 minetest.register_node("default:stone", {
-	description = "Grass",
-	tiles = {"grass.png"},
+	description = "Stone",
+	tiles = {"stone.png"},
 	groups = {cracky=1}
 })
 
