@@ -1,0 +1,8 @@
+DO WHAT YOU WANT TO PUBLIC LICENSE
+or DWYWPL
+
+December 2nd 2015
+License Copyright (C) 2015 Michael Tomaino (PlatinumArts@gmail.com)
+http://www.sandboxgamemaker.com/dwywpl/
+
+1. You are allowed to do whatever you want to with whatever is being licensed by this license!

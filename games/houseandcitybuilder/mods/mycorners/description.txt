@@ -1,0 +1,7 @@
+Put decorative corners on blocks.
+
+mycorners makes it so you can add  corners on blocks like the corners of castles and houses. 
+
+Just build a machine and make your cornerboards. You can add the corners to blocks in the machine or use the hammer to set them.
+
+You will have beautiful buildings in no time.

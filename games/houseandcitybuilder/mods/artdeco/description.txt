@@ -1,0 +1,3 @@
+ArtDeco ver. 1.0 by the greatone
+This mod just adds some new building blocks to Minetest. It includes arches, and some new stained glass windows. I hope you enjoy them.
+Please feel free to offer critique and, or suggestions.

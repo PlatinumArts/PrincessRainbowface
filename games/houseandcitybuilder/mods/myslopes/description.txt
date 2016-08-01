@@ -1,0 +1,1 @@
+Make smooth slopes out of many default nodes.

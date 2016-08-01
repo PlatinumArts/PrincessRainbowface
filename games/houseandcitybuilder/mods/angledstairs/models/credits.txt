@@ -1,0 +1,7 @@
+Models in .obj format provided by "pithy" License: DWYWPL
+https://forum.minetest.net/memberlist.php?mode=viewprofile&u=19278
+
+link to post
+https://forum.minetest.net/viewtopic.php?p=220247#p220247 Thank you pithy.
+
+Additional work on models provided by "sofar" License: CC-BY-SA-4.0 - Auke Kok <sofar@foo-projects.org>

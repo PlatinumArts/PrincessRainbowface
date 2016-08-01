@@ -1,0 +1,47 @@
+Elevator Mod [fancy_elevator] v0.2
+
+for Minetest
+
+This mod adds Elevators for traveling fast up and down. Elevators can only placed in existing shafts.
+You can travel between the doors of an shaft. Right click the Elevator, you can see a menu with all
+existing floors(doors) in the shaft. This works only for doors with a name. Right clicking the doors
+opens an menu where you can call an elevator or set the name of the door.
+
+Right clicking the Elevator works only in front of the Elevator.
+
+-------------
+
+Crafting:
+
+Elevator:
+
+group:wood			group:wood
+default:steel_ingot	default:steel_ingot
+group:wood			group:wood
+
+Elevator Door:
+
+default:steel_ingot	default:steel_ingot
+group:wood			default:steel_ingot
+default:steel_ingot	default:steel_ingot
+
+Elevator Shaft:
+
+default:stone		group:wood
+group:wood		default:stone
+
+-------------
+
+This is an early version of this mod, it isn't perfect and there are maybe some ugly bugs.
+
+-------------
+License of source code
+Code by fz72
+LGPLv2.1
+see LICENSE
+
+Some code copied and modified from the game's default doors mod.
+Some code copied from PilzAdam's Mod carts, too.
+
+License of textures
+The textures are all CC-BY-SA
