@@ -3004,6 +3004,7 @@ minetest.register_craft({
 	},
 })
 
+--[[
 minetest.register_craft({
 	output = "homedecor:beer_tap",
 	recipe = {
@@ -3012,6 +3013,7 @@ minetest.register_craft({
 		{ "default:steel_ingot","default:steel_ingot","default:steel_ingot" }
 	},
 })
+--]]
 
 minetest.register_craft({
 	output = "homedecor:swing",

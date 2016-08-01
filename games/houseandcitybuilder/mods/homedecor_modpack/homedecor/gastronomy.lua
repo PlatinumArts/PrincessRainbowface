@@ -114,6 +114,7 @@ homedecor.register("dartboard", {
 	sounds = default.node_sound_wood_defaults(),
 })
 
+--[[
 homedecor.register("beer_tap", {
 	description = "Beer tap",
 	mesh = "homedecor_beer_taps.obj",
@@ -172,6 +173,7 @@ homedecor.register("beer_mug", {
 	selection_box = beer_cbox,
 	on_use = minetest.item_eat(2)
 })
+--]]
 
 local svm_cbox = {
 	type = "fixed",
