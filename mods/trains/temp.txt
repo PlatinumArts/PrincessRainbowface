@@ -1,0 +1,18 @@
+	--prototype testing - variable speeds
+	if speed < 0.5 and test == true then
+		speed = speed + 0.01
+		self.object:get_luaentity().speed = self.object:get_luaentity().speed + 0.01
+	end
+	if speed > 0 and test == false then
+		speed = speed - 0.01
+		self.object:get_luaentity().speed = self.object:get_luaentity().speed - 0.01
+	end
+	
+	if speed >= 0.5 then
+		self.object:get_luaentity().test = false
+	end
+	if speed <= 0 then
+		self.object:get_luaentity().test = true
+	end
+	--print(speed)
+	--end test
