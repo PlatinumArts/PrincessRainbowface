@@ -1,0 +1,10 @@
+[Desktop Entry]
+Encoding=UTF-8
+Type=Application
+Name=Minetest
+Name[en_US]=Minetestdesktoptemplate
+Exec=/home/m/minetest/bin/minetest
+Comment[en_US]=Minetest
+StartupNotify=true
+Categories=Games
+Icon=/home/m/minetest/misc/minetest.svg
