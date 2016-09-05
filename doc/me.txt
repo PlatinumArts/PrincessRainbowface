@@ -1,0 +1,3 @@
+'enable_damage' if true monsters will attack players (default is true)
+'only_peaceful_mobs' if true only animals will spawn in game (default is false)
+'mobs_disable_blood' if false blood effects appear when mob is hit (default is false)
