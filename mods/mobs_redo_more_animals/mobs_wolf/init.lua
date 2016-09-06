@@ -38,7 +38,7 @@ if mobs.mod and mobs.mod == "redo" then
 		--fly_in = "air",
 		walk_chance = 75,
 		walk_velocity = 2,
-		run_velocity = 3,
+		run_velocity = 30,
 		--fall_speed = -10,
 		--floats = 1,
 
